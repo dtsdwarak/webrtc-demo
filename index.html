@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- Title -->
+        <title>RTS Demo</title>
+
+        <!-- CSS -->
+        <link href="css/webrtc.css" type="text/css" rel="stylesheet">
+        <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+
+        <!-- JavaScript -->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js" type="text/JavaScript"></script>
+
+    </head>
+
+    <body>
+
+        <!-- ==== NAVIGATION BAR ON TOP -->
+        <nav role="navigation" class="navbar navbar-inverse">
+            <div class="container-fluid">
+
+                <!-- Navbar Header -->
+                <div class="navbar-header">
+                <a href="#" class="navbar-brand">Real Time Systems</a>
+                </div>
+
+                <!-- Navigation bar links -->
+                <div id="bs-example-navbar-collapse-9" class="collapse navbar-collapse">
+                    <!-- NavBar Right -->
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                    </ul>
+                    <!-- About Button -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" data-toggle="modal" data-target="#basicModal">About</a></li>
+                    </ul>
+                </div>
+
+            </div><!-- Container fluid class ends -->
+        </nav>
+
+
+
+        <div id="title">
+            <h1>Initiate Chat</h1>
+            <form id="createRoom">
+                <input id="sessionInput" class="form-control" autocomplete="off"/>
+                <button type="submit" class="btn btn-primary" id="createButton" data-toggle="tooltip" data-placement="bottom" title="Create Chat Room">Create Room</button>
+            </form>
+        </div>
+
+        <p id="subTitle"></p>
+
+
+        <!-- Video Room -->
+        <div class="videoContainer">
+            <video id="localVideo" style="" oncontextmenu="return false;"></video>
+            <div id="localVolume" class="volume_bar"></div>
+        </div>
+        <div id="remotes"></div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+             <!-- Modal Header -->
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">About</h4>
+              </div>
+              
+              <!-- Modal Body -->
+              <div class="modal-body">
+                <p>This was done as Project Work for Real Time Systems Course, 2014-2015. Implemented using WebRTC (Web Real Time Communcation), Node.js, Socket.io and HTML/CSS/JavaScript</p>
+                <p>Done by</p>
+                <p>Dwaraka Nath - 2014H112184P <br/> Lohith S - 2014H112192P</p>
+              </div>
+              
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Okay</button>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="socket.io.js"></script>
+        <script src="simplewebrtc.bundle.js"></script>
+        <script src="js/webrtc.js" type="text/JavaScript"></script>
+        <script>
+            window.onload=function(){
+                $(function () { $("[data-toggle='tooltip']").tooltip(); });
+            }
+        </script>
+    </body>
+</html>

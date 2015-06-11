@@ -1,12 +1,12 @@
 {
-  "name": "simplewebrtc",
-  "version": "1.10.1",
+  "name": "webrtc-rts",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "git@github.com:henrikjoreteg/SimpleWebRTC.git"
+    "url": "git+ssh://git@github.com/dtsdwarak/webrtc-demo.git"
   },
   "main": "./simplewebrtc.js",
-  "description": "World's easiest webrtc",
+  "description": "simple webrtc",
   "dependencies": {
     "webrtcsupport": "^1.0.0",
     "wildemitter": "1.x",
@@ -23,6 +23,17 @@
     "uglify-js": "2.3.6"
   },
   "scripts": {
-    "updateLatest": "./scripts/updateLatest.sh"
-  }
+    "updateLatest": "./scripts/updateLatest.sh",
+    "start": "node server.js"
+  },
+  "bugs": {
+    "url": "https://github.com/dtsdwarak/webrtc-demo/issues"
+  },
+  "homepage": "https://github.com/dtsdwarak/webrtc-demo#readme",
+  "keywords": [
+    "webrtc",
+    "nodejs"
+  ],
+  "author": "Dwaraka Nath",
+  "license": "MIT"
 }

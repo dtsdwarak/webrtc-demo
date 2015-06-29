@@ -5,7 +5,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/dtsdwarak/webrtc-demo.git"
   },
-  "main": "./simplewebrtc.js",
+  "main": "./server.js",
   "description": "simple webrtc",
   "dependencies": {
     "webrtcsupport": "^1.0.0",

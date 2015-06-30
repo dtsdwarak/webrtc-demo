@@ -1,0 +1,7 @@
+{
+  "name": "WebRTC-Demo",
+  "description": "WebRTC Demo application with nodejs backend",
+  "repository": "https://github.com/dtsdwarak/webrtc-demo",
+  "logo": "https://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["nodejs", "webrtc", "socketio"]
+}

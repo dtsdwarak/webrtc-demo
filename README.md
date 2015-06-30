@@ -1,6 +1,8 @@
 # WebRTC-Demo
 Demo app for WEBRTC
 
+[![Travis CI](https://travis-ci.org/dtsdwarak/webrtc-demo.svg?branch=master)]
+
 #Serving the app
 ```bash
 $ npm start

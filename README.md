@@ -1,18 +1,17 @@
-# webrtc-demo
+# WebRTC-Demo
 Demo app for WEBRTC
 
 #Serving the app
-
 ```bash
 $ npm start
 ```
 
-#Viewing
+#Deploying
+The app will be served at [localhost:8001](http://localhost:8001) under default settings when you run it locally. ```simplewebrtc.bundle.js``` has been configured to use my signalling server that runs at [Heroku](https://webrtc-signal-server.herokuapp.com). You are free to use this as it is or spin up your own signalling server and use it. If you plan to do the latter, you may want to look into [dtsdwarak/webrtc-signal](https://github.com/dtsdwarak/webrtc-signal).
 
-The app will be served at [localhost:8001](http://localhost:8001). ```simplewebrtc.bundle.js``` needs to be configured to use a signalling server. You can either run a signal server in your machine by running [dtsdwarak/webrtc-signal](https://github.com/dtsdwarak/webrtc-signal) or use some free signalling server such as mine that runs on Heroku.
+Also, you can deploy the same code to Heroku.
 
-Alternately, you can deploy the same code to Heroku.
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/dtsdwarak/webrtc-demo/tree/master)
 
 #Demo
-
 [WebRTC Demo](https://webrtc-rts.herokuapp.com)

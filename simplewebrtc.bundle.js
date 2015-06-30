@@ -12,7 +12,7 @@ function SimpleWebRTC(opts) {
     var self = this;
     var options = opts || {};
     var config = this.config = {
-            url: 'http://webrtcsignal-dtsdwarak.rhcloud.com:8888',
+            url: 'http://webrtc-signal-server.herokuapp.com:80',
             socketio: {/* 'force new connection':true*/},
             debug: false,
             localVideoEl: '',

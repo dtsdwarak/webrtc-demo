@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+    
         <!-- Title -->
         <title>WebRTC Demo</title>
 
@@ -15,14 +15,6 @@
 
         <!--Favicon -->
         <link href="images/webrtc.png" rel="icon" type="image/png">
-
-        <!-- Handling URL Issues -->
-        <script type="JavaScript/text">
-            $(document).ready(function(){
-                if(window.location.protocol==="https:")
-                    window.location.protocol="http";
-            });
-        </script>
 
     </head>
 
@@ -105,7 +97,13 @@
         <script src="js/webrtc.js" type="text/JavaScript"></script>
         <script>
             window.onload=function(){
-                $(function () { $("[data-toggle='tooltip']").tooltip(); });
+                $(function () { 
+                    $("[data-toggle='tooltip']").tooltip(); 
+                });
+                $(function(){
+                    if(window.location.protocol==="https:")
+                        window.location.protocol="http";
+                });
             }
         </script>
     </body>

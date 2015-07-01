@@ -16,9 +16,12 @@
         <!--Favicon -->
         <link href="images/webrtc.png" rel="icon" type="image/png">
 
+        <!-- Handling URL Issues -->
         <script type="JavaScript/text">
-            if(window.location.protocol==="https:")
-                window.location.protocol="http";
+            $(document).ready(function(){
+                if(window.location.protocol==="https:")
+                    window.location.protocol="http";
+            });
         </script>
 
     </head>
